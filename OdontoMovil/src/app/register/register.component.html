@@ -1,0 +1,52 @@
+<div class="register-block">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-4 register-sec">
+				<h2 class="text-center">Regististrate Ahora</h2>
+				<form class="register-form">
+	   <div class="form-group">
+		<label  class="text-uppercase" >Nombre</label>
+		<input type="text" class="form-control" placeholder="" [(ngModel)]="user.nombre" name="nombres" required #nombres="ngModel">
+	  </div>
+		 <div class="form-group">
+		<label  class="text-uppercase" >Primer Apellido</label>
+		<input type="text" class="form-control" placeholder="" [(ngModel)]="user.apellido" name="apellidos" required #apellidos="ngModel">
+	  </div>
+		 <div class="form-group">
+		<label  class="text-uppercase" >Segundo Apellido</label>
+		<input type="text" class="form-control" placeholder="" [(ngModel)]="user.segundo_apellido" name="segundos" required #segundos="ngModel">
+	  </div>
+		 <div class="form-group">
+		<label  class="text-uppercase" >Telefono</label>
+		<input type="text" class="form-control" placeholder="" [(ngModel)]="user.telefono" name="telefonos" required #telefonos="ngModel">
+	  </div>
+		 <div class="form-group">
+		<label  class="text-uppercase" >Email</label>
+		<input type="text" class="form-control" placeholder="" [(ngModel)]="user.email" name="emails" required #emails="ngModel">
+	  </div>
+		 <div class="form-group">
+		<label  class="text-uppercase" >Contraseña</label>
+		<input type="password" class="form-control" placeholder="" [(ngModel)]="user.password" name="passwords" required #passwords="ngModel">
+	  </div>
+	  <div class="form-group">
+			<label  class="text-uppercase">Confirmacion de contraseña</label>
+		<input type="password" class="form-control" placeholder="" [(ngModel)]="confirmationPassword" name="confirmationPasswords" required #confirmationPasswords="ngModel">
+		
+	  </div>
+	
+	 
+	  
+	  
+	  
+		<div class="form-check">
+		<button type="submit" class="btn btn-register float-right" (click)="register()">Aceptar</button>
+	  </div>
+	  
+	</form>
+	
+			</div>
+			<div class="col-md-8 banner-sec">
+		</div>
+	</div>
+</div>
+	
